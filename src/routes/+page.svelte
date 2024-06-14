@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+   const greet = "something" 
+</script>
+
+<h1 class="text-2xl text-blue-400">somthing nice here</h1>
+{greet}
