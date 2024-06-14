@@ -1,4 +1,6 @@
 <script>
+	import Heart from '$lib/assets/heart.png';
+
 	/**
 	 *
 	 */
@@ -78,7 +80,7 @@
 	];
 </script>
 
-<div class="h-full snap-mandatory snap-y overflow-y-auto">
+<div class="h-full snap-mandatory snap-y overflow-y-auto px-7">
 	{#each phrases as p}
 		<div class="snap-start h-screen text-center text-slate-300 grid place-items-center md:px-96">
 			{#if p.phrase.includes('existance')}
@@ -91,10 +93,10 @@
 	<div
 		class="snap-start h-screen text-center text-slate-300 flex flex-col justify-center gap-6 md:px-96"
 	>
-		<p class="text-8xl">
-			<span> Because I Love You </span>
-			<span> </span>
+		<p class="text-6xl md:text-8xl grid place-items-center">
+			<img src={Heart} class="size-32 md:size-52 mt-4" alt="Heart image" />
+			<span class="italic"> Because <br /> <span class="font-bold"> I Love You</span> </span>
 		</p>
-		<button><a href="/love"> Click Me </a></button>
+		<button class="text-pink-300 text-lg md:mt-9"><a href="/love"> Click Me </a></button>
 	</div>
 </div>
