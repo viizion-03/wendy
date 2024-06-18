@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'sunset': "url(./src/lib/assets/backgrounds/sunset.jpg)",
+        'sunset': "url(/src/lib/assets/backgrounds/sunset.jpg)"
       }
     },
   },
